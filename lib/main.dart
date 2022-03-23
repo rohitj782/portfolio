@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/profile/profile_view.dart';
 
 import 'home/home_view.dart';
 
@@ -10,15 +9,8 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-      ),
-      home: const HomeView()
-    );
+    return const MaterialApp(title: 'Rohit Joshi', home: HomeView());
   }
 }
