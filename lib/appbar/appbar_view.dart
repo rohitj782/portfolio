@@ -16,7 +16,7 @@ class AppBarView extends StatefulWidget {
 class _AppBarViewState extends State<AppBarView> {
   @override
   Widget build(BuildContext context) {
-    return Provider(
+    return ChangeNotifierProvider(
       create: (context) => AppBarViewModel(),
       child: Padding(
         padding: EdgeInsets.fromLTRB(SizeConfig.blockSizeHorizontal * 5, 8,
@@ -32,7 +32,7 @@ class _AppBarViewState extends State<AppBarView> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(
-                    width: appBarViewModel.sizedBoxWidth*4,
+                    width: appBarViewModel.sizedBoxWidth * 4,
                   ),
                   Text(
                     "ROHIT",
